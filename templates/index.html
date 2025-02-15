@@ -8,20 +8,20 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: url('https://t3.ftcdn.net/jpg/02/22/96/00/360_F_222960005_bVo8WMI5rRTYi4wABTszEnM5YXcAzHZQ.jpghttps://t3.ftcdn.net/jpg/02/22/96/00/360_F_222960005_bVo8WMI5rRTYi4wABTszEnM5YXcAzHZQ.jpg') no-repeat center center fixed;
+            background: url('https://t3.ftcdn.net/jpg/02/22/96/00/360_F_222960005_bVo8WMI5rRTYi4wABTszEnM5YXcAzHZQ.jpg') no-repeat center center fixed;
             background-size: cover;
         }
         .container {
-            max-width: 900px;
-            background: rgba(255, 255, 255, 0.625);
+            max-width: 90%;
+            background: rgba(255, 255, 255, 0.85);
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -31,24 +31,34 @@
             border-radius: 25px;
             font-weight: bold;
         }
-        h1 
-        {
-            font-size: 3rem;
+        h1 {
+            font-size: 2.5rem;
             font-weight: bold;
             background: linear-gradient(45deg, #090909, #40403f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1px #fff;
         }
-
-        p
-        {
+        p {
             font-size: 1.2rem;
             font-weight: bold;
-            color: white;
-            -webkit-text-stroke: 1px #5e5d5d;
+            color: #333;
         }
-
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -59,7 +69,7 @@
             <p class="text-muted">AI & Data Science Enthusiast</p>
             <p>I strive to create meaningful insights from data and build intelligent applications.</p>
             <p>For More Details Click on the Options Below </p>
-            <div class="mt-4">
+            <div class="d-flex flex-wrap justify-content-center">
                 <a href="https://docs.google.com/document/d/1ISWLchtIVQ6ZdgrRANjfowX9Jl2NAZTY/edit?usp=sharing&ouid=106131421819361590403&rtpof=true&sd=true" class="btn btn-success btn-custom">Resume</a>
                 <a href="https://github.com/pandurenga04/" class="btn btn-dark btn-custom">GitHub</a>
                 <a href="https://www.linkedin.com/in/pandurengasrinivasan-g/" class="btn btn-primary btn-custom">LinkedIn</a>
